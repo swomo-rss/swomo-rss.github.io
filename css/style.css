@@ -137,6 +137,11 @@ ul {
     }
 }
 
+/* Ensure consistent spacing between sections */
+.section > *:last-child {
+    margin-bottom: 0;
+}
+
 .title-container {
     width: 100%;
     margin: auto;
@@ -179,7 +184,7 @@ ul {
 .section {
     margin-top: -80px;
     padding-top: 80px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     text-align: justify;
 }
 
@@ -291,4 +296,9 @@ ul.dropdown-menu li a{
 
 .profiles img {
     object-fit: cover;
+}
+
+/* Remove extra bottom space after speakers grid */
+#speakers .profiles {
+    margin-bottom: -30px;
 }
